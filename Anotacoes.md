@@ -55,6 +55,14 @@ git commit -M "Titulo do commit" -m "Descrição do commit"
 
 ---
 
+## git push
+É utilizado para enviar as alterações confirmadas (commits) do seu repositório local para um repositório remoto, como o GitHub, GitLab ou Bitbucket.
+`````` bash
+git push
+``````
+
+---
+
 ## git log
 
 Para exibir uma lista dos commits no repositório, incluindo informações como o hash do commit, autor, data e mensagem.
