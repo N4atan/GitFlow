@@ -75,3 +75,9 @@ git log
 `````` bash
 git log --oneline
 ``````
+---
+
+-Se você quiser ver o que foi modificado dentro dos arquivos em cada commit.
+`````` bash
+git log --stat
+``````
