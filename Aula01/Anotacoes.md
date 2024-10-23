@@ -1,4 +1,5 @@
-# Comandos Básicos
+# Aula 01
+
 
 ## git init
 
@@ -54,6 +55,12 @@ git commit -M "Titulo do commit" -m "Descrição do commit"
 ``````
 
 ---
+-   permite modificar o último commit, ajustando a mensagem ou incluindo arquivos esquecidos, sem criar um novo commit.
+
+`````` bash
+git commit --amend
+``````
+
 
 ## git push
 É utilizado para enviar as alterações confirmadas (commits) do seu repositório local para um repositório remoto, como o GitHub, GitLab ou Bitbucket.
@@ -80,4 +87,15 @@ git log --oneline
 -Se você quiser ver o que foi modificado dentro dos arquivos em cada commit.
 `````` bash
 git log --stat
+``````
+---
+
+# Aula 02
+
+
+## git revert 
+
+Esse comando é usado para desfazer mudanças de um commit específico criando um novo commit que anula as mudanças anteriores. Ao contrário de um reset, o histórico de commits permanece intacto.
+`````` bash
+git revert
 ``````
