@@ -18,11 +18,13 @@ git add .
 git add 'nomeDoArquivo'
 ``````
 
+---
+
 ## git commit
 
 É usado para salvar as alterações que foram adicionadas à staging area em um novo ponto de versão no histórico do repositório. Ao executar este comando, você registra permanentemente o estado atual do seu projeto, criando um snapshot que pode ser revisitado ou revertido no futuro.
 
----
+
 
 
 `````` bash
@@ -40,22 +42,22 @@ git commit
 5.  Metódo ZALVA e ZAI:
 shift + Z + Z (shit pois ira deixar Z maiusculo, pode usar capslock)
 
----
+
 -   Faz um commit com um titulo, maneira rápida.
 
 `````` bash
 git commit -m "Titulo do commit"
 ``````
 
----
+
 -   Faz um commit com um titulo, sua descrição, de maneira mas rápida.
 
 `````` bash
 git commit -M "Titulo do commit" -m "Descrição do commit"
 ``````
 
----
--   permite modificar o último commit, ajustando a mensagem ou incluindo arquivos esquecidos, sem criar um novo commit.
+
+-   Permite modificar o último commit, ajustando a mensagem ou incluindo arquivos esquecidos, sem criar um novo commit.
 
 `````` bash
 git commit --amend
@@ -66,6 +68,7 @@ git commit --amend
 É utilizado para enviar as alterações confirmadas (commits) do seu repositório local para um repositório remoto, como o GitHub, GitLab ou Bitbucket.
 `````` bash
 git push
+git push -f
 ``````
 
 ---
@@ -76,13 +79,12 @@ Para exibir uma lista dos commits no repositório, incluindo informações como 
 `````` bash
 git log
 ``````
----
+
 
 - Se você quer uma visualização mais compacta do histórico de commits, pode usar:
 `````` bash
 git log --oneline
 ``````
----
 
 -Se você quiser ver o que foi modificado dentro dos arquivos em cada commit.
 `````` bash
@@ -98,4 +100,4 @@ git log --stat
 Esse comando é usado para desfazer mudanças de um commit específico criando um novo commit que anula as mudanças anteriores. Ao contrário de um reset, o histórico de commits permanece intacto.
 `````` bash
 git revert
-``````
+``````  
