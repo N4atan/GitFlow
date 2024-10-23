@@ -31,15 +31,15 @@ git add 'nomeDoArquivo'
 git commit
 ``````
 
-1.  O Vim abrirá. Pressione **i** para entrar no modo de inserção.
+>1.  O Vim abrirá. Pressione **i** para entrar no modo de inserção.
 
-2.  Digite sua mensagem de commit.
+>2.  Digite sua mensagem de commit.
 
-3.  Pressione **Esc** para sair do modo de inserção.
+>3.  Pressione **Esc** para sair do modo de inserção.
 
-4.  Digite **:wq** e pressione Enter para salvar e sair.
+>4.  Digite **:wq** e pressione Enter para salvar e sair.
 
-5.  Metódo ZALVA e ZAI:
+>5.  Metódo ZALVA e ZAI:
 shift + Z + Z (shit pois ira deixar Z maiusculo, pode usar capslock)
 
 
@@ -101,3 +101,14 @@ Esse comando é usado para desfazer mudanças de um commit específico criando u
 `````` bash
 git revert
 ``````  
+
+## git restore 
+É usado para desfazer alterações em arquivos no diretório de trabalho (working directory), revertendo-os para o estado em que estavam no último commit. Isso remove quaisquer mudanças não salvas ou não adicionadas ao staging, mas não afeta a área de staging.
+`````` bash
+git restore
+`````` 
+
+- É usado para remover arquivos da área de staging (index) sem excluir ou modificar os arquivos no diretório de trabalho. Ele basicamente desfaz o comando `git add`, movendo as mudanças de volta para a área de trabalho, mas sem perder o conteúdo alterado.
+`````` bash
+git restore --staged
+`````` 
