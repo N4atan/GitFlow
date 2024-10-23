@@ -42,17 +42,12 @@ git commit
 >5.  Metódo ZALVA e ZAI:
 shift + Z + Z (shit pois ira deixar Z maiusculo, pode usar capslock)
 
-
--   Faz um commit com um titulo, maneira rápida.
-
 `````` bash
+# Faz um commit com um titulo, maneira rápida:
 git commit -m "Titulo do commit"
-``````
 
 
--   Faz um commit com um titulo, sua descrição, de maneira mas rápida.
-
-`````` bash
+#Faz um commit com um titulo, sua descrição, de maneira mas rápida.
 git commit -M "Titulo do commit" -m "Descrição do commit"
 ``````
 
@@ -68,7 +63,7 @@ git commit --amend
 É utilizado para enviar as alterações confirmadas (commits) do seu repositório local para um repositório remoto, como o GitHub, GitLab ou Bitbucket.
 `````` bash
 git push
-git push -f
+git push -f #Irá forcar o push
 ``````
 
 ---
@@ -78,17 +73,10 @@ git push -f
 Para exibir uma lista dos commits no repositório, incluindo informações como o hash do commit, autor, data e mensagem.
 `````` bash
 git log
-``````
 
+git log --oneline   #Se você quer uma visualização mais compacta do histórico de commits.
 
-- Se você quer uma visualização mais compacta do histórico de commits, pode usar:
-`````` bash
-git log --oneline
-``````
-
--Se você quiser ver o que foi modificado dentro dos arquivos em cada commit.
-`````` bash
-git log --stat
+git log --stat  #-Se você quiser ver o que foi modificado dentro dos arquivos em cada commit.
 ``````
 ---
 
@@ -112,3 +100,35 @@ git restore
 `````` bash
 git restore --staged
 `````` 
+
+## git tag
+No Git, uma `tag` é uma referência fixa a um ponto específico na história do repositório, geralmente usada para marcar versões ou lançamentos de um projeto. As tags são úteis para identificar versões importantes de um software, como v1.0, v2.0, etc., permitindo que você retorne facilmente a esses pontos no futuro.
+
+- **Tag leve:** É simplesmente um ponteiro para um commit específico e não contém informações adicionais.
+`````` bash
+git tag "tagname"
+`````` 
+
+- **Tag anotada:** É uma tag que é armazenada como um objeto completo no repositório Git, contendo informações como o autor, data e uma mensagem de tag, semelhante a um commit.
+`````` bash
+git tag "tagname" -m "descrição"
+`````` 
+- **Possibilidades:**
+`````` bash
+# Ver tags:
+git tag 
+git tag -l "1.*"    #Irá buscar todas que começam com 1.
+
+
+# Push de tags:
+git push --tags     #Subira todas as tags
+
+
+# Deletar tag:
+git tag -d "tagname"               # Remove a tag localmente
+git push --delete origin v1.0  # Remove a tag do repositório remoto
+
+
+# Em um `commit` especifico:
+git tag -a tag-name commit-id -m "Mensagem da tag"
+``````
