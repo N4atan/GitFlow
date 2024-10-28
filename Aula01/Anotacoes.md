@@ -132,3 +132,17 @@ git push --delete origin v1.0  # Remove a tag do repositório remoto
 # Em um `commit` especifico:
 git tag -a tag-name commit-id -m "Mensagem da tag"
 ``````
+
+## git branch
+Usado para ver as branchs já criadas.
+
+`````` bash
+git branch
+
+#Criando uma branch.
+git branch "Nova Branch" #Criará a partir do último commit. Mas significa que estarei nela.
+
+
+#Entrar em uma branch.
+git checkout "Nova Branch"  #Entrarei na branch. 
+``````
