@@ -140,9 +140,28 @@ Usado para ver as branchs já criadas.
 git branch
 
 #Criando uma branch.
-git branch "Nova Branch" #Criará a partir do último commit. Mas significa que estarei nela.
+git branch nova    #Criará a partir do último commit. Mas significa que estarei nela.
 
 
 #Entrar em uma branch.
-git checkout "Nova Branch"  #Entrarei na branch. 
+git checkout nova  #Entrarei na branch. 
+
+
+#Chamando a outra branch na master.
+git merge nova      #Devemos estar na branch que desejamos chmar outra.
+``````
+
+# Remoto
+``````bash
+git fetch #Pega as informações do remoto pro local.
+
+git push #Pega as coisas do local e envia pro remoto.
+
+git pull #Faz o fetch e faz um merge no meu local   
+``````
+
+## git rebase
+É um comando usado para reorganizar ou "rebasear" commits, colocando um conjunto de commits em uma nova base. Ele é útil principalmente para manter o histórico do projeto mais limpo e linear, evitando bifurcações complexas (ou "árvores" de commits).
+`````` bash
+git rebase nomedabranchquedesejocompararosquenaoestaonela
 ``````
