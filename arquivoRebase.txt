@@ -1,1 +1,3 @@
 Editando para dar o commit r1
+
+Apos o commit R1, escrevo isso, para o R2.
