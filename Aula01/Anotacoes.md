@@ -163,5 +163,5 @@ git pull #Faz o fetch e faz um merge no meu local
 ## git rebase
 É um comando usado para reorganizar ou "rebasear" commits, colocando um conjunto de commits em uma nova base. Ele é útil principalmente para manter o histórico do projeto mais limpo e linear, evitando bifurcações complexas (ou "árvores" de commits).
 `````` bash
-git rebase nomedabranchquedesejocompararosquenaoestaonela
+git rebase -i
 ``````
