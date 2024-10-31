@@ -1,5 +1,5 @@
-let n1
-let n2
+let n1 = 1;
+let n2 = 1;
 
 const soma = n1 + n2;
 console.log(soma);
@@ -9,3 +9,6 @@ console.log(sub);
 
 const mult = n1 * n2;
 console.log(mult);
+
+const div = n1 / n2;
+console.log(div);
