@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <input type="text" id="input1" placeholder="Digite o primeiro número!">
+    <input type="text" id="input2" placeholder="Digite o segundo número!">
+    
+    <button id="resultado">Calcular!</button>
+    
+    <h1 id="soma"></h1>
+    <h1 id="sub"></h1>
+    <h1 id="mult"></h1>
+    <h1 id="div"></h1>
+
+
+
+    <script>
+        document.getElementById("resultado").addEventListener("click", () => {
+            let n1 = Number(document.getElementById("input1").value);
+            let n2 = Number(document.getElementById("input2").value);
+
+            let div = n2 != 0 ? (n1/n2).toFixed(2) : "Divisão por zero não permitida!"
+
+            document.getElementById("soma").innerText = `Soma: ${n1 + n2}`
+            document.getElementById("sub").innerText = (`Subtração: ${n1 - n2}`)
+            document.getElementById("mult").innerText = (`Multiplicação: ${n1 * n2}`)
+            document.getElementById("div").innerText = (`Divisão: ${div}`)
+        })
+    </script>
+    
+</body>
+</html>
