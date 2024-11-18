@@ -1,6 +1,0 @@
-console.log("Hello Word");
-
-estou editando pela branch exercicio.
-
-Modificando depois de dar push na branch exercicio criando uma brach exercico no remoto. Estou modificando pelo remoto.
-Nao sei oque esta acontecendo.
