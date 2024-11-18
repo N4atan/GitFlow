@@ -1,8 +1,0 @@
-Editando para dar o commit r1
-
-Apos o commit R1, escrevo isso, para o R2.
-
-Apos o R2, escrevo para o R3.
-
-
-Apos o R3, agora vem o R4.
